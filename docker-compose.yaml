@@ -1,0 +1,47 @@
+version: '2'
+services:
+
+  my_app:
+    build: ./front_end
+    ports:
+      - "8080:8080"
+    volumes:
+      - /front_end/src:/target/in/container
+    stdin_open: true
+    tty: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
+
+#services:
+#  back-end:
+#    build: ./back_end
+#    # for testing : to reach node connector within docker bridge network
+#    network_mode: bridge
+#    environment:
+#      - PORT=8888
+#      - NODE_CONNECTOR_URL=172.17.0.2:8080
+#  front-end:
+#    build: ./front_end
+#    # command to start the development server
+#    command: npm run dev
+#    # ------------------ #
+#    volumes:
+#      - /app/node_modules # <---- this enables a much faster start/reload
+#    ports:
+#      - "8088:8088"
+#    environment:
+#      - CHOKIDAR_USEPOLLING=true # <---- this enables the hot reloading
+##    build: ./front_end
+##    command: npm run serve
+##    environment:
+##      - CHOKIDAR_USEPOLLING=true
+##    ports:
+##      - "8088:8088"
+##    volumes:
+##      - /app/node_modules
+##    depends_on:
+##      - back-end
+#networks:
+#  back-end:
+#    driver: bridge
