@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import VotingView from '../views/VotingView.vue'
 import RegisterView from "@/views/RegisterView.vue";
+import BlockchainView from "@/views/BlockchainView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,12 @@ const router = createRouter({
       path: '/register',
       number: 'register',
       component: RegisterView
+    }
+    ,
+    {
+      path: '/blockchain',
+      number: 'blockchain',
+      component: BlockchainView
     }
   ]
 })
