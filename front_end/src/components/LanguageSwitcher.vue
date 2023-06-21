@@ -1,7 +1,7 @@
 <template>
     <div class="d-flex" v-for="lang in languages" :key="lang">
         <a
-                :class="{ 'language-switcher__item--active': lang === currentLanguage }"
+                :class="{ 'text-white fw-bold' : lang === currentLanguage, 'text-secondary': lang !== currentLanguage }"
                 class="language-switcher__item me-2"
                 @click="switchLanguage(lang)"
         >
@@ -41,14 +41,10 @@ export default {
 </script>
 
 <style scoped>
-.language-switcher__item{
+.language-switcher__item {
     cursor: pointer;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.language-switcher__item--active {
-    font-weight: bold;
 }
 </style>

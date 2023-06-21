@@ -1,21 +1,23 @@
 <template>
     <div class="container mt-5">
-        <h1>Registration</h1>
+        <h1>{{ $t("registration.title") }}</h1>
         <form @submit="submitForm">
-            <label for="num">Number:</label>
+            <label for="num">{{$t("registration.input_label")}}:</label>
             <div class="input-group mb-3">
                 <input type="text" class="form-control" id="num" :value="state.num" required>
 
-                <button type="button" class="btn btn-primary" @click="generateNumber">Generate</button>
+                <button type="button" class="btn btn-primary" @click="generateNumber">{{
+                    $t("registration.generate_button")
+                    }}</button>
             </div>
-            <button type="submit" class="btn btn-success">Register</button>
+            <button type="submit" class="btn btn-success">{{ $t("registration.submit") }}</button>
         </form>
     </div>
 </template>
 
 <script>
 import {reactive} from 'vue';
-import {sendPostRequest} from "../js/requests";
+import {sendPostRequest} from "@/js/requests";
 
 export default {
     setup() {

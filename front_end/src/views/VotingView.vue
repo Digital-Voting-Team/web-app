@@ -5,42 +5,27 @@ import Question from '../components/Question.vue';
     <form action="/home">
 
         <Question v-for="(question, index) in questions" :key="index" :index="index + 1" :question="question.question"
-            :options="question.options" @change-option="updateResults" />
+                  :options="question.options" @change-option="updateResults"/>
 
-        <button type="button" class="btn btn-primary" action="submit" @click="showResults">Submit</button>
+        <button type="button" class="btn btn-primary" action="submit" @click="showResults">{{ $t("voting.submit") }}
+        </button>
     </form>
 </template>
 
 <script setup>
 import Question from '../components/Question.vue';
 
-const votingName = 'Voting name';
+let votingName = 'Голосування за голову СПФ КНК';
 
 const questions = [
     {
-        question: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
+        question: 'Чи підтримуєте Ви Ілона Маска на посаду голови СПФ КНК?',
         options: [
-            'Option 1',
-            'Option 2',
-            'Option 3'
+            'Так',
+            'Ні',
+            'Утримуюсь'
         ]
     },
-    {
-        question: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        options: [
-            'Option 1',
-            'Option 2',
-        ]
-    },
-    {
-        question: 'Lorem ipsum dolor sit amet consectetur adipisicing.',
-        options: [
-            'Option 1',
-            'Option 2',
-            'Option 3',
-            'Option 4'
-        ]
-    }
 ];
 
 const results = new Map();

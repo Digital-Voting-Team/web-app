@@ -1,12 +1,12 @@
 <template>
     <div class="card border-success mb-2">
         <div class="card-header">
-            <label class="card-text">Question {{ index }}. {{ question }}</label>
+            <label class="card-text">{{ $t("question.question") }} {{ index }}. {{ question }}</label>
         </div>
 
         <div class="card-body">
             <select class="form-select form-control" @change=emitEvent>'
-                <option selected>Choose...</option>
+                <option selected>{{$t("question.choose")}}</option>
                 <option v-for="option in options" :key="option">{{ option }}</option>
             </select>
         </div>
