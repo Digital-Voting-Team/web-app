@@ -1,5 +1,5 @@
 <template>
-    <h1>Home for your vote!</h1>
+    <h1>{{ $t("home.title") }}</h1>
 
     <Carousel :slides=slides></Carousel>
 </template>

@@ -8,6 +8,7 @@ const messages = {
             register: 'Register',
             about: 'About',
             groups: 'Groups',
+            create_group: 'Create New Group',
         },
         home: {
             title: 'Our Project',
@@ -36,10 +37,10 @@ const messages = {
             nazarii: 'Nazarii Savorona',
             nazarii_description: 'A highly accomplished, skilled and knowledgeable computer science student with extensive knowledge of programming and computer applications. Looking for an opportunity in the field of information technology as computer programmer in a renowned organization.',
             anton: 'Anton Balykov',
-            anton_description: 'I am a 4th year undergraduate student at Faculty of Computer Science and Cybernetics of Taras Shevchenko National University of Kyiv. I am a Software Engineer, passionate about AI, keen on programming in Python, GoLang, Java, C++programming languages. Got a chance to try out several frameworks, namely Spring for Java, Ruby on Rails for Ruby. Also familiar with SQL, MatLab, Maple, Git, UnrealEngine. Looking forward to learning more about AI and Machine Learning.',
+            anton_description: 'I am a 4th year undergraduate student at Faculty of Computer Science and Cybernetics of Taras Shevchenko National University of Kyiv. I am a Software Engineer, passionate about AI, keen on programming in Python, GoLang, Java, C++programming languages. Looking forward to learning more about AI and Machine Learning.',
             ruslan: 'Ruslan Volchetskyi',
-            ruslan_description: "Software Engineer, 4th year student at Faculty of Computer Science and Cybernetics of Taras Shevchenko National University of Kyiv with a great set of skills like Python, Java, Go, C++, knowledge of SQL, Git, UnrealEngine and vast potential for software development and computer science. I'm really fond of AI, game development and problem solving as well as collaborative work and team communication. As an astute student, I'm looking for different opportunities in various fields of IT.",
-        }
+            ruslan_description: "I'm a fourth-year software engineering student keen on innovative technologies. Skilled in a range of programming languages and technologies, including Python, Go, Java, C++, git and PostgreSQL. Participated in many olympiads and hackathons, including team competitions, thereby building collaboration and communication skills as well as enhancing ability to adapt to changing requirements and circumstances. As an astute student, I'm looking for different opportunities in various fields of IT.",
+        },
     },
     ua: {
         navbar: {
@@ -48,6 +49,7 @@ const messages = {
             register: 'Реєстрація',
             about: 'Про нас',
             groups: 'Групи',
+            create_group: 'Створити Нову Групу',
         },
         home: {
             title: 'Наш Проєкт',
@@ -76,10 +78,10 @@ const messages = {
             nazarii: 'Назарій Саворона',
             nazarii_description: 'Високоосвічений, кваліфікований та обізнаний студент комп\'ютерних наук з глибокими знаннями програмування та комп\'ютерних додатків. Шукаю можливість працювати в галузі інформаційних технологій програмістом у відомій організації.',
             anton: 'Антон Баликов',
-            anton_description: "Я навчаюся на 4 курсі бакалаврату факультету комп'ютерних наук та кібернетики Київського національного університету імені Тараса Шевченка. За фахом я інженер-програміст, захоплююся штучним інтелектом, захоплююся програмуванням на мовах програмування Python, GoLang, Java, C++. Мав нагоду спробувати декілька фреймворків, а саме Spring для Java, Ruby on Rails для Ruby. Також знайомий з SQL, MatLab, Maple, Git, UnrealEngine. З нетерпінням чекаю можливості дізнатися більше про штучний інтелект та машинне навчання.",
+            anton_description: "Я навчаюся на 4 курсі бакалаврату факультету комп'ютерних наук та кібернетики Київського національного університету імені Тараса Шевченка. За фахом я інженер-програміст, захоплююся штучним інтелектом, захоплююся програмуванням на мовах програмування Python, GoLang, Java, C++. З нетерпінням чекаю можливості дізнатися більше про штучний інтелект та машинне навчання.",
             ruslan: 'Руслан Волчецький',
-            ruslan_description: "Інженер-програміст, студент 4-го курсу факультету комп'ютерних наук та кібернетики Київського національного університету імені Тараса Шевченка з великим набором навичок, таких як Python, Java, Go, C++, знання SQL, Git, UnrealEngine та величезним потенціалом для розробки програмного забезпечення та комп'ютерних наук. Я дуже люблю штучний інтелект, розробку ігор та вирішення проблем, а також спільну роботу та командну комунікацію. Як кмітливий студент, я шукаю різні можливості в багатьох галузях ІТ.",
-        }
+            ruslan_description: "Я студент четвертого курсу факультету програмної інженерії, який захоплюється інноваційними технологіями. Володію різними мовами та технологіями програмування, зокрема Python, Go, Java, C++, git та PostgreSQL. Брав участь у багатьох олімпіадах та хакатонах, включаючи командні змагання, тим самим розвиваючи навички співпраці та комунікації, а також підвищуючи здатність адаптуватися до мінливих вимог та обставин. Як кмітливий студент, я шукаю різні можливості в багатьох галузях ІТ.",
+        },
     }
 }
 
