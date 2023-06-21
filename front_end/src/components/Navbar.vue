@@ -15,17 +15,17 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <RouterLink to="/" :active='$route.name === `home`' exact-active-class="active" class="nav-link"
-                                    aria-current="page">Home
+                                    aria-current="page"> {{ $t("navbar.home") }}
                         </RouterLink>
                     </li>
                     <li class="nav-item">
                         <RouterLink to="/voting" :active='$route.name === `voting`' exact-active-class="active"
-                                    class="nav-link" aria-current="page">Votings
+                                    class="nav-link" aria-current="page"> {{ $t("navbar.votings") }}
                         </RouterLink>
                     </li>
                     <li class="nav-item">
                         <RouterLink to="/register" :active='$route.name === `register`' exact-active-class="active"
-                                    class="nav-link" aria-current="page">Register
+                                    class="nav-link" aria-current="page">{{ $t("navbar.register") }}
                         </RouterLink>
                     </li>
                     <li class="nav-item dropdown">
@@ -43,22 +43,18 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                    <li class="nav-item">
                         <RouterLink to="/about" :active='$route.name === `about`' exact-active-class="active"
-                                    class="nav-link">About
+                                    class="nav-link">{{ $t("navbar.about") }}
                         </RouterLink>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search in votings..."
-                           aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <form class="d-inline-flex">
+                    <LanguageSwitcher/>
                 </form>
             </div>
         </div>
     </nav>
 </template>
 <script setup>
+import LanguageSwitcher from "@/components/LanguageSwitcher.vue";
 </script>
